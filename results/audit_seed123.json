@@ -1,0 +1,44 @@
+{
+  "seed": 123,
+  "n_samples": 500,
+  "mask_ratio": 0.2,
+  "ig_steps": 32,
+  "methods": {
+    "attention": {
+      "method": "Raw Attention",
+      "top_drop_mean": 0.5803145804208035,
+      "top_drop_std": 0.4341933057671482,
+      "random_drop_mean": 0.297204465615194,
+      "random_drop_std": 0.4028493723889741,
+      "bottom_drop_mean": 0.17086437863849893,
+      "bottom_drop_std": 0.324577225279217,
+      "wilcoxon_statistic": 99081.0,
+      "p_value": 8.373029272107629e-30,
+      "faithful": true
+    },
+    "input_x_gradient": {
+      "method": "Input x Gradient",
+      "top_drop_mean": 0.6597684635498711,
+      "top_drop_std": 0.4257285563414503,
+      "random_drop_mean": 0.297204465615194,
+      "random_drop_std": 0.4028493723889741,
+      "bottom_drop_mean": 0.12236847475728063,
+      "bottom_drop_std": 0.27767777710349,
+      "wilcoxon_statistic": 104643.0,
+      "p_value": 6.1730982354181e-39,
+      "faithful": true
+    },
+    "integrated_gradients": {
+      "method": "Integrated Gradients",
+      "top_drop_mean": 0.6927376007931908,
+      "top_drop_std": 0.41269461553393194,
+      "random_drop_mean": 0.297204465615194,
+      "random_drop_std": 0.4028493723889741,
+      "bottom_drop_mean": 0.1234667260167862,
+      "bottom_drop_std": 0.27963115173813363,
+      "wilcoxon_statistic": 106967.0,
+      "p_value": 7.613018315632492e-44,
+      "faithful": true
+    }
+  }
+}
